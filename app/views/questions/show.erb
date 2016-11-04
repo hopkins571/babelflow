@@ -3,9 +3,12 @@
     <form method="POST", action="/questions/<%= @question.id %>/votes" class="vote">
       <button id="upvote" type="submit" name="vote" value="1"><font color='"#000000"'>&#9650;</font>
     </form></button>
+
+    <br>
     <br>
      <div id="score">Vote score: <%= @question.votes.pluck(:vote).sum %>
      </div>
+    <br>
     <br>
     <form method="POST", action="/questions/<%= @question.id %>/votes" class="vote">
       <button id="downvote" type="submit" name="vote" value="-1"><font color='"#000000"'>&#9660;</font></button>
@@ -28,7 +31,6 @@
   <ol>
     <% @question.answers.each do |answer| %>
       <%= erb(:'answers/show', locals: {answer: answer }, layout: false )  %>
-  </div>
     <% end %>
   </ol>
 <% end %>

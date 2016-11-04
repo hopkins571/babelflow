@@ -3,18 +3,5 @@
 <br>
 <button class="button" "comment_button"="">Comment</button>
 <br>
-<div class='answer-votes'>
-    <form method="POST", action="/questions/<%= @question.id %>/answers/<%= answer.id %>/votes" class="vote">
-      <button id="upvote" type="submit" name="vote" value="1"><font color='"#000000"'>&#9650;</font>
-    </form></button>
-
-    <br>
-     <div id="score">Vote score: <%= answer.votes.pluck(:vote).sum %>
-     </div>
-    <br>
-    <form method="POST", action="/questions/<%= @question.id %>/answers/<%= answer.id %>/votes" class="vote">
-      <button id="downvote" type="submit" name="vote" value="-1"><font color='"#000000"'>&#9660;</font></button>
-
-    </form>
 <hr>
 <br>
