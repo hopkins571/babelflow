@@ -6,6 +6,16 @@
 3.  Adam
 4.  Sam 
 
+## Installation
+1. Ruby version 2.3.3 is recommended.
+2. Install bundler if not already installed by running `gem install bundler` from the command line.
+3. Run `bundle install` to install required gems.
+4. Run `bundle exec db:create` to create the database.
+5. Run `bundle exec db:migrate` to migrate the database.
+6. Run `bundle exec db:seed` to seed the database with dummy data.
+7. Run `bundle exec shotgun` to start the server.
+8. Point your browser to localhost:9393 to test out the app!
+
 ## Summary
 
 We're going to build a substantial Sinatra application from the ground up: a [StackOverflow](http://stackoverflow.com) clone.  The goal of this challenge is to build a well-structured Sinatra application with a good mixture of front-end and back-end features.  Focus on defining clear routes, creating clean templates, and enhancing your application with AJAX.  Before we jump in, peruse StackOverflow to understand its core features.
